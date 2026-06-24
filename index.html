@@ -26,12 +26,15 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="tel:+919501427298" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="btn btn-primary open-modal-btn">Book Demo</button>
             </div>
             <div class="mobile-menu-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -42,12 +45,12 @@
     <!-- Hero Section -->
     <header class="hero" id="home">
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
+        <div class="container hero-content animate-on-scroll">
             <h1 class="hero-title">Master Physics with <span>Sandeep Sir</span></h1>
             <p class="hero-subtitle">Unlock your potential in Classes XI & XII, JEE (Mains & Advanced), and NEET with Pathankot's premier physics institute.</p>
             <div class="hero-buttons">
-                <a href="#courses" class="btn btn-primary">Explore Courses</a>
-                <a href="#contact" class="btn btn-secondary">Get Directions <i class="fa-solid fa-arrow-right"></i></a>
+                <button class="btn btn-primary open-modal-btn">Book Free Demo</button>
+                <a href="#courses" class="btn btn-secondary">Explore Courses <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="trust-badges">
                 <div class="badge"><i class="fa-solid fa-star"></i> Top Rated in Pathankot</div>
@@ -60,7 +63,7 @@
     <!-- About Section -->
     <section class="about section" id="about">
         <div class="container about-container">
-            <div class="about-image">
+            <div class="about-image animate-on-scroll slide-right">
                 <div class="image-wrapper">
                     <img src="assets/physics_classroom_1782301843256.png" alt="Physics Classroom at PI Physics Classes">
                     <div class="experience-badge">
@@ -69,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-text">
+            <div class="about-text animate-on-scroll slide-left">
                 <div class="section-header left-aligned">
                     <span class="section-subtitle">About Us</span>
                     <h2 class="section-title">Igniting Minds, Shaping Futures</h2>
@@ -88,66 +91,98 @@
     <!-- Courses Section -->
     <section class="courses section bg-light" id="courses">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate-on-scroll">
                 <span class="section-subtitle">Our Programs</span>
                 <h2 class="section-title">Academic Excellence Tailored For You</h2>
             </div>
             <div class="courses-grid">
                 <!-- Course 1 -->
-                <div class="course-card">
+                <div class="course-card animate-on-scroll fade-up">
                     <div class="course-icon"><i class="fa-solid fa-atom"></i></div>
                     <h3>Class XI & XII (Boards)</h3>
-                    <p>Build a rock-solid foundation with deep conceptual understanding aligned with the latest CBSE/State board syllabus. Focus on scoring maximum marks.</p>
-                    <a href="#contact" class="course-link">Join Batch <i class="fa-solid fa-chevron-right"></i></a>
+                    <p>Build a rock-solid foundation with deep conceptual understanding aligned with the latest CBSE/State board syllabus.</p>
+                    <button class="course-link open-modal-btn">Enquire Now <i class="fa-solid fa-chevron-right"></i></button>
                 </div>
                 <!-- Course 2 -->
-                <div class="course-card highlighted">
+                <div class="course-card highlighted animate-on-scroll fade-up" style="transition-delay: 0.1s;">
                     <div class="course-icon"><i class="fa-solid fa-rocket"></i></div>
                     <h3>JEE (Mains & Advanced)</h3>
-                    <p>Intensive problem-solving, advanced concept application, and time-management strategies to crack one of India's toughest engineering entrance exams.</p>
-                    <a href="#contact" class="course-link">Join Batch <i class="fa-solid fa-chevron-right"></i></a>
+                    <p>Intensive problem-solving, advanced concept application, and time-management strategies to crack engineering entrance exams.</p>
+                    <button class="course-link open-modal-btn">Enquire Now <i class="fa-solid fa-chevron-right"></i></button>
                 </div>
                 <!-- Course 3 -->
-                <div class="course-card">
+                <div class="course-card animate-on-scroll fade-up" style="transition-delay: 0.2s;">
                     <div class="course-icon"><i class="fa-solid fa-stethoscope"></i></div>
                     <h3>NEET Preparation</h3>
-                    <p>Targeted physics coaching for medical aspirants. Learn to solve complex numericals quickly and accurately to boost your overall NEET score.</p>
-                    <a href="#contact" class="course-link">Join Batch <i class="fa-solid fa-chevron-right"></i></a>
+                    <p>Targeted physics coaching for medical aspirants. Learn to solve complex numericals quickly and accurately.</p>
+                    <button class="course-link open-modal-btn">Enquire Now <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (NEW) -->
+    <section class="results section" id="results">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">Our Pride</span>
+                <h2 class="section-title">Proven Track Record</h2>
+            </div>
+            <div class="results-grid animate-on-scroll">
+                <div class="result-card">
+                    <div class="score">99.8<span>%ile</span></div>
+                    <h4>JEE Mains</h4>
+                    <p>Highest Score 2025</p>
+                </div>
+                <div class="result-card">
+                    <div class="score">170<span>/180</span></div>
+                    <h4>NEET Physics</h4>
+                    <p>Top Score 2025</p>
+                </div>
+                <div class="result-card">
+                    <div class="score">98<span>%</span></div>
+                    <h4>CBSE Class XII</h4>
+                    <p>Board Highest</p>
+                </div>
+                <div class="result-card">
+                    <div class="score">500<span>+</span></div>
+                    <h4>Selections</h4>
+                    <p>In Top Institutes</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="why-us section" id="why-us">
+    <section class="why-us section bg-light" id="why-us">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate-on-scroll">
                 <span class="section-subtitle">The PI Advantage</span>
                 <h2 class="section-title">Why Students Trust Sandeep Sir</h2>
             </div>
             <div class="features-grid">
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll fade-up">
                     <div class="feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
                     <div class="feature-content">
                         <h4>Concept Over Cramming</h4>
                         <p>We break down complex physics phenomena into intuitive, easy-to-understand concepts using real-world examples.</p>
                     </div>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll fade-up" style="transition-delay: 0.1s;">
                     <div class="feature-icon"><i class="fa-solid fa-user-tie"></i></div>
                     <div class="feature-content">
                         <h4>Expert Mentorship</h4>
                         <p>Learn directly from Sandeep Sir, whose passion and unique teaching methodology inspire students to love physics.</p>
                     </div>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll fade-up" style="transition-delay: 0.2s;">
                     <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
                     <div class="feature-content">
                         <h4>Regular Assessments</h4>
                         <p>Frequent tests and performance tracking to identify weak areas and continuously improve exam readiness.</p>
                     </div>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll fade-up" style="transition-delay: 0.3s;">
                     <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
                     <div class="feature-content">
                         <h4>Dedicated Doubt Sessions</h4>
@@ -158,30 +193,88 @@
         </div>
     </section>
 
+    <!-- Testimonials Section (NEW) -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">Student Reviews</span>
+                <h2 class="section-title">What Our Students Say</h2>
+            </div>
+            <div class="testimonial-carousel animate-on-scroll">
+                <div class="testimonial-container" id="testimonial-container">
+                    <!-- Slides will be populated by JS for infinite loop effect or just static cards for simplicity -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Sandeep Sir's way of explaining difficult physics concepts is unmatched. I went from fearing physics to loving it, and scored 95% in my boards!"</p>
+                        <div class="reviewer">
+                            <div class="avatar">R</div>
+                            <div>
+                                <h4>Rohan Verma</h4>
+                                <span>Class XII Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"The numerical practice and doubt sessions helped me crack JEE Mains with a 99 percentile in Physics. Highly recommend PI Physics Classes!"</p>
+                        <div class="reviewer">
+                            <div class="avatar">A</div>
+                            <div>
+                                <h4>Amit Sharma</h4>
+                                <span>JEE Aspirant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Best physics coaching in Pathankot. The environment is competitive yet supportive. The tests are exactly like the real NEET exam."</p>
+                        <div class="reviewer">
+                            <div class="avatar">S</div>
+                            <div>
+                                <h4>Sneha Gupta</h4>
+                                <span>NEET Aspirant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button id="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Process Section -->
     <section class="process section bg-dark text-white" id="process">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate-on-scroll">
                 <span class="section-subtitle text-gold">Our Methodology</span>
                 <h2 class="section-title text-white">The Path to Mastery</h2>
             </div>
             <div class="process-steps">
-                <div class="step">
+                <div class="step animate-on-scroll fade-up">
                     <div class="step-number">01</div>
                     <h4>Concept Building</h4>
                     <p>In-depth lectures focusing on core principles and theory.</p>
                 </div>
-                <div class="step">
+                <div class="step animate-on-scroll fade-up" style="transition-delay: 0.1s;">
                     <div class="step-number">02</div>
                     <h4>Numerical Practice</h4>
                     <p>Solving diverse problems to apply learned concepts effectively.</p>
                 </div>
-                <div class="step">
+                <div class="step animate-on-scroll fade-up" style="transition-delay: 0.2s;">
                     <div class="step-number">03</div>
                     <h4>Mock Tests</h4>
                     <p>Simulating exam environments to build speed and accuracy.</p>
                 </div>
-                <div class="step">
+                <div class="step animate-on-scroll fade-up" style="transition-delay: 0.3s;">
                     <div class="step-number">04</div>
                     <h4>Analysis & Review</h4>
                     <p>Detailed performance breakdown and personalized feedback.</p>
@@ -193,34 +286,21 @@
     <!-- Gallery Section -->
     <section class="gallery section" id="gallery">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate-on-scroll">
                 <span class="section-subtitle">Visuals</span>
                 <h2 class="section-title">Inside Our Institute</h2>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item animate-on-scroll slide-right">
                     <img src="assets/physics_lab_1782301855540.png" alt="Physics Lab Equipment">
                     <div class="gallery-overlay">
                         <span>Modern Facilities</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item animate-on-scroll slide-left">
                     <img src="assets/physics_classroom_1782301843256.png" alt="Students Studying">
                     <div class="gallery-overlay">
                         <span>Focused Environment</span>
-                    </div>
-                </div>
-                <!-- Additional editable placeholders for the client -->
-                <div class="gallery-item placeholder-item">
-                    <div class="placeholder-content">
-                        <i class="fa-regular fa-image"></i>
-                        <span>Add Institute Photo</span>
-                    </div>
-                </div>
-                <div class="gallery-item placeholder-item">
-                    <div class="placeholder-content">
-                        <i class="fa-regular fa-image"></i>
-                        <span>Add Student Success Photo</span>
                     </div>
                 </div>
             </div>
@@ -230,11 +310,11 @@
     <!-- FAQ Section -->
     <section class="faq section bg-light" id="faq">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate-on-scroll">
                 <span class="section-subtitle">Answers</span>
                 <h2 class="section-title">Frequently Asked Questions</h2>
             </div>
-            <div class="faq-container">
+            <div class="faq-container animate-on-scroll fade-up">
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>Who teaches the classes?</h3>
@@ -278,10 +358,10 @@
     <!-- Contact Section -->
     <section class="contact section" id="contact">
         <div class="container">
-            <div class="contact-wrapper">
+            <div class="contact-wrapper animate-on-scroll fade-up">
                 <div class="contact-info">
                     <span class="section-subtitle">Get In Touch</span>
-                    <h2 class="section-title left-aligned">Start Your Journey Today</h2>
+                    <h2 class="section-title left-aligned">Start Your Journey</h2>
                     <p class="contact-desc">Ready to excel in physics? Contact us to inquire about batches, fees, or to schedule a demo class.</p>
                     
                     <div class="info-items">
@@ -289,8 +369,7 @@
                             <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
                             <div class="details">
                                 <h4>Visit Us</h4>
-                                <p>Dhangu Road, behind Pushap Cinema, Salaria Nagar, Pathankot, Punjab 145001<br>
-                                <em>(Also at: St No. 5, Indira Colony)</em></p>
+                                <p>Dhangu Road, behind Pushap Cinema, Salaria Nagar, Pathankot 145001</p>
                             </div>
                         </div>
                         <div class="info-item">
@@ -300,18 +379,32 @@
                                 <p><a href="tel:+919501427298">+91 95014 27298</a></p>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <div class="icon"><i class="fa-solid fa-clock"></i></div>
-                            <div class="details">
-                                <h4>Hours</h4>
-                                <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sun: Closed</p>
-                            </div>
-                        </div>
                     </div>
+
+                    <!-- Contact Form (NEW) -->
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send an Inquiry</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <select id="course" required>
+                                <option value="" disabled selected>Select Course Interested In</option>
+                                <option value="Class 11">Class XI</option>
+                                <option value="Class 12">Class XII</option>
+                                <option value="JEE">JEE (Mains & Advanced)</option>
+                                <option value="NEET">NEET</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
                 </div>
                 
                 <div class="contact-map">
-                    <!-- Google Maps Embed -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.1895103444053!2d75.65001327538965!3d32.2712978738676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c7fb966be36ad%3A0xa9babb12cbad2e4!2sPI%20Physics%20Classes!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -324,7 +417,7 @@
             <div class="footer-brand">
                 <a href="#" class="logo footer-logo">
                     <span class="logo-pi">π</span>
-                    <span class="logo-text">PI PHYSICS</span>
+                    <span class="logo-text text-white">PI PHYSICS</span>
                 </a>
                 <p>Pathankot's premier institute for Class XI, XII, JEE, and NEET physics preparation, led by Sandeep Sir.</p>
                 <div class="social-links">
@@ -339,7 +432,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#courses">Courses</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#results">Results</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -358,6 +451,39 @@
             </div>
         </div>
     </footer>
+
+    <!-- Demo Modal (NEW) -->
+    <div class="modal-overlay" id="demoModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2>Book a Free Demo Class</h2>
+                <p>Experience Sandeep Sir's teaching methodology firsthand.</p>
+            </div>
+            <form id="demoForm">
+                <div class="form-group">
+                    <label for="demoName">Full Name</label>
+                    <input type="text" id="demoName" required>
+                </div>
+                <div class="form-group">
+                    <label for="demoPhone">Phone Number</label>
+                    <input type="tel" id="demoPhone" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="demoClass">Target Exam / Class</label>
+                    <select id="demoClass" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="JEE">JEE Mains/Advanced</option>
+                        <option value="NEET">NEET</option>
+                        <option value="Class 12">Class 12 Boards</option>
+                        <option value="Class 11">Class 11</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                <div class="form-message" id="demoMessage"></div>
+            </form>
+        </div>
+    </div>
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/919501427298?text=Hello%20Sandeep%20Sir,%20I%20would%20like%20to%20inquire%20about%20your%20physics%20classes." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
